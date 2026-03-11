@@ -1,0 +1,18 @@
+project_id: project-d
+name: Project D
+priority: medium
+status: queued
+stage: discovery
+summary: 已创建项目-D 的占位记忆文件。
+current_goal: 填写项目简报并建立初始待办列表。
+next_action: 填写项目-D 简报并替换占位内容。
+active_agent: 组合PM
+last_updated: 2026-03-11
+progress_percent: 5
+blockers:
+  - 真实项目细节尚未录入。
+risks: []
+dependencies: []
+review_state: not-started
+test_state: not-started
+environment_state: unknown

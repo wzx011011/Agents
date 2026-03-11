@@ -1,0 +1,10 @@
+﻿{
+    "files":  [
+                  "claude-compatible/.claude/CLAUDE.md",
+                  "claude-compatible/.claude/agents/*.md",
+                  "claude-compatible/.claude/rules/*.md"
+              ],
+    "generatedAt":  "2026-03-11T22:05:45",
+    "source":  "VS Code custom agents workspace",
+    "strategy":  "Export Claude-compatible assets and reuse them as OpenClaw migration input"
+}

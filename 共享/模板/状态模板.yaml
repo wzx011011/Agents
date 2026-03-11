@@ -1,0 +1,17 @@
+project_id: 项目-X
+name: 项目 X
+priority: medium
+status: active
+stage: discovery
+summary: 替换为当前状态的一句话概述。
+current_goal: 替换为当前正在推进的目标。
+next_action: 替换为明确的下一步动作。
+active_agent: 组合PM
+last_updated: 2026-03-11
+progress_percent: 0
+blockers: []
+risks: []
+dependencies: []
+review_state: not-started
+test_state: not-started
+environment_state: unknown

@@ -1,0 +1,11 @@
+- id: 项目A-001
+  title: 填写项目简报并定义第一个 pilot 任务
+  priority: high
+  owner_role: 组合PM
+  status: ready
+  estimate_hours: 2
+  acceptance_criteria:
+    - 项目简报反映真实项目目标和技术栈
+    - 项目状态中已经有明确的当前目标
+    - 已准备好 1 个交给通用开发执行的真实任务
+  dependencies: []

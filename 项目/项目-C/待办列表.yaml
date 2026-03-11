@@ -1,0 +1,10 @@
+- id: 项目C-001
+  title: 填写项目简报并定义第一个可执行任务
+  priority: medium
+  owner_role: 组合PM
+  status: ready
+  estimate_hours: 2
+  acceptance_criteria:
+    - 项目简报反映真实项目信息
+    - 项目状态包含明确目标和下一步动作
+  dependencies: []

@@ -1,0 +1,9 @@
+- id: 项目-001
+  title: 替换为第一个可执行事项
+  priority: high
+  owner_role: 通用开发
+  status: ready
+  estimate_hours: 4
+  acceptance_criteria:
+    - 替换为可度量的验收标准
+  dependencies: []
