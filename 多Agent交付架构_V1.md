@@ -380,7 +380,7 @@ risks:
   - 本地与 CI 环境存在漂移
 dependencies:
   - shared-auth-service
-review_state: pending
+review_state: not-started
 test_state: not-started
 environment_state: partial
 ```

@@ -1,0 +1,118 @@
+﻿{
+    "workflowVersion":  1,
+    "exportedFrom":  "VS Code custom agents workspace",
+    "agents":  [
+                   {
+                       "name":  "测试工程师",
+                       "description":  "试运行阶段的测试与验证代理。用于单元测试、集成测试、回归检查和验证报告维护。",
+                       "tools":  [
+                                     "Read",
+                                     "Edit",
+                                     "Grep",
+                                     "Glob",
+                                     "Bash"
+                                 ],
+                       "handoffs":  [
+                                        {
+                                            "label":  "返回PM",
+                                            "target":  "组合PM",
+                                            "prompt":  "使用最新验证结果更新项目状态和下一步动作。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "返回开发",
+                                            "target":  "通用开发",
+                                            "prompt":  "处理失败的验证项并继续实现工作。",
+                                            "send":  "false"
+                                        }
+                                    ]
+                   },
+                   {
+                       "name":  "评审调试",
+                       "description":  "试运行阶段的独立评审与调试代理。用于代码评审、缺陷隔离、回归风险检查和根因分析。",
+                       "tools":  [
+                                     "Read",
+                                     "Edit",
+                                     "Grep",
+                                     "Glob",
+                                     "Bash"
+                                 ],
+                       "handoffs":  [
+                                        {
+                                            "label":  "执行测试",
+                                            "target":  "测试工程师",
+                                            "prompt":  "验证经过评审或修复后的状态，并更新测试报告。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "返回PM",
+                                            "target":  "组合PM",
+                                            "prompt":  "把评审发现、阻塞项和下一步动作记录到项目状态中。",
+                                            "send":  "false"
+                                        }
+                                    ]
+                   },
+                   {
+                       "name":  "通用开发",
+                       "description":  "试运行阶段的通用开发代理。用于编码、重构、文档修改和本地环境配置。",
+                       "tools":  [
+                                     "Read",
+                                     "Edit",
+                                     "Grep",
+                                     "Glob",
+                                     "Bash"
+                                 ],
+                       "handoffs":  [
+                                        {
+                                            "label":  "请求评审",
+                                            "target":  "评审调试",
+                                            "prompt":  "审查最新实现变更，或调查当前阻塞问题。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "执行测试",
+                                            "target":  "测试工程师",
+                                            "prompt":  "验证已实现的变更，并更新项目测试报告。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "返回PM",
+                                            "target":  "组合PM",
+                                            "prompt":  "根据当前实现进展更新项目状态、待办列表和下一步动作。",
+                                            "send":  "false"
+                                        }
+                                    ]
+                   },
+                   {
+                       "name":  "组合PM",
+                       "description":  "试运行阶段的组合与项目管理代理。用于优先级管理、任务拆解、状态维护和跨项目交接协调。",
+                       "tools":  [
+                                     "Read",
+                                     "Edit",
+                                     "Grep",
+                                     "Glob"
+                                 ],
+                       "handoffs":  [
+                                        {
+                                            "label":  "开始开发",
+                                            "target":  "通用开发",
+                                            "prompt":  "先读取目标项目的记忆文件，再开始最高优先级且已准备就绪的任务。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "发起评审",
+                                            "target":  "评审调试",
+                                            "prompt":  "基于项目记忆审查当前实现状态，或调查当前报告的问题。",
+                                            "send":  "false"
+                                        },
+                                        {
+                                            "label":  "执行测试",
+                                            "target":  "测试工程师",
+                                            "prompt":  "验证当前项目状态，并更新最新测试报告。",
+                                            "send":  "false"
+                                        }
+                                    ]
+                   }
+               ]
+}
+
