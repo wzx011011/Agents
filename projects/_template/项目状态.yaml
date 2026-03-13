@@ -1,0 +1,19 @@
+project_id: project-a
+name: Project A
+priority: high
+status: active
+stage: discovery
+summary: 项目-A 是当前建议的 pilot 候选项目，真实项目上下文尚未补齐。
+current_goal: 填写项目简报，并明确第一个 pilot 任务。
+next_action: 完成项目-A 的项目简报、待办列表和环境说明。
+active_agent: 组合PM
+last_updated: 2026-03-11
+progress_percent: 5
+blockers:
+  - 真实项目细节尚未录入。
+risks:
+  - 在补齐真实项目上下文前，无法验证 pilot 工作流。
+dependencies: []
+review_state: not-started
+test_state: not-started
+environment_state: unknown

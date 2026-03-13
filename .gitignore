@@ -1,2 +1,12 @@
-# 运行时编排状态（不入库）
+# 运行时文件（不入库）
 .run/
+.cliq/
+.oplans/
+
+# 编辑器/IDE 配置
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
